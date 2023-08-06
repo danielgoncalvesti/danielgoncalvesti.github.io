@@ -109,8 +109,7 @@ val message: String = result match {
 
 println(message) // Output: "Found element"
 ```
-\
-&nbsp;
+
 #### Try
 Try is a container that represents a computation that may result in a value or an exception. It is useful for handling functions that may throw exceptions.
 ```scala
@@ -138,8 +137,7 @@ val output2: String = result2 match {
 println(output1) // Output: "Result: 5"
 println(output2) // Output: "Error: Division by zero is not allowed."
 ```
-\
-&nbsp;
+
 #### Either
 Either is a container that represents a value of one of two possible types: Left or Right. It is often used when we want to handle multiple error types.
 Consider an example of using Either to handle different types of errors:
