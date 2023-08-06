@@ -13,7 +13,7 @@ author:
 date: 2018-06-02
 ---
 
-![scala-logo](img/scala-logo.png)
+![scala-logo](/img/scala-logo.png)
 
 The purpose of this article is not to compare Java with Scala, even because each one uses different paradigms. So while the first one is objected-oriented programming, the another one is funcional programming (but it also works objected-oriented). First of all, what I am going to try to describe here it is my perspective as a Java developer learning Scala language.
 Basically, programmers who already know paradigms and concepts about funcional programming such as pure functions, recursion and higher-order functions before to start with Scala, will have greater ease to understand the concepts of the language. I actually say that because at some moment I have decided to follow this order: to learn the concepts and then to apply those concepts to the Scala language, so this way works to me.
