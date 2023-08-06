@@ -23,7 +23,7 @@ Basically, programmers who already know paradigms and concepts about funcional p
 ## Why Scala?
 
 Scala definitely has many advantages when compared to Java in terms of easiness to use concurrency, optimization of code complexity and concise notation, among others. In Scala, we can do all the stuff that we do in Java and more something else, so it's like a Java++.
-![scala-logo](/img/gif/fancy.gif)
+![fancy-gif](/img/gif/fancy.gif)
 
 ## Some Curiosities
 
