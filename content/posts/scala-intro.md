@@ -83,9 +83,11 @@ val listOfSomething = List(1,2,3) //OR val listOfSomething: List[Int] = List(1,2
 
 ### Error Handling
 Error handling in Scala is essential for writing robust and reliable code. Scala provides several mechanisms for dealing with errors, and three popular approaches are using Option, Try, and Either.
+\
+&nbsp;
 
 #### Option
-Option is a container that represents an optional value, meaning it can hold either Some(value) or None. It is widely used to handle scenarios where a function may not return a valid result.
+Option is a container that represents an optional value, meaning it can hold either `Some(value)` or `None`. It is widely used to handle scenarios where a function may not return a valid result.
 
 Let's consider an example of using Option to handle the absence of a value:
 ```scala
@@ -107,7 +109,8 @@ val message: String = result match {
 
 println(message) // Output: "Found element"
 ```
-
+\
+&nbsp;
 #### Try
 Try is a container that represents a computation that may result in a value or an exception. It is useful for handling functions that may throw exceptions.
 ```scala
@@ -135,7 +138,8 @@ val output2: String = result2 match {
 println(output1) // Output: "Result: 5"
 println(output2) // Output: "Error: Division by zero is not allowed."
 ```
-
+\
+&nbsp;
 #### Either
 Either is a container that represents a value of one of two possible types: Left or Right. It is often used when we want to handle multiple error types.
 Consider an example of using Either to handle different types of errors:
