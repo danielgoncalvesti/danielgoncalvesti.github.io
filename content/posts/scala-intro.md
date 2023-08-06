@@ -80,5 +80,88 @@ val foo = "word" //OR val foo: String = "word"
 val listOfSomething = List(1,2,3) //OR val listOfSomething: List[Int] = List(1,2,3)
 
 ```
+### Option for Error Handling
+Option is a container that represents an optional value, meaning it can hold either Some(value) or None. It is widely used to handle scenarios where a function may not return a valid result.
 
-<!---## Features--->
+Let's consider an example of using Option to handle the absence of a value:
+```scala
+def findElementById(id: Int): Option[String] = {
+  // Database lookup logic here
+  // Return Some(result) if the element is found, otherwise None
+  if (id == 1) Some("Found element")
+  else None
+}
+
+val elementId = 1
+val result: Option[String] = findElementById(elementId)
+
+// Pattern matching to handle the Option
+val message: String = result match {
+  case Some(value) => value
+  case None => "Element not found"
+}
+
+println(message) // Output: "Found element"
+```
+
+### Try for Error Handling
+Try is a container that represents a computation that may result in a value or an exception. It is useful for handling functions that may throw exceptions.
+```scala
+import scala.util.Try
+
+def divide(a: Int, b: Int): Try[Int] = Try {
+  if (b != 0) a / b
+  else throw new ArithmeticException("Division by zero is not allowed.")
+}
+
+val result1: Try[Int] = divide(10, 2) // Success(5)
+val result2: Try[Int] = divide(10, 0) // Failure(java.lang.ArithmeticException: Division by zero is not allowed.)
+
+// Pattern matching to handle the Try
+val output1: String = result1 match {
+  case scala.util.Success(value) => s"Result: $value"
+  case scala.util.Failure(exception) => s"Error: ${exception.getMessage}"
+}
+
+val output2: String = result2 match {
+  case scala.util.Success(value) => s"Result: $value"
+  case scala.util.Failure(exception) => s"Error: ${exception.getMessage}"
+}
+
+println(output1) // Output: "Result: 5"
+println(output2) // Output: "Error: Division by zero is not allowed."
+```
+
+### Using Either for Error Handling
+```scala
+def divide(a: Int, b: Int): Either[String, Int] = {
+  if (b != 0) Right(a / b)
+  else Left("Division by zero is not allowed.")
+}
+
+val result1: Either[String, Int] = divide(10, 2) // Right(5)
+val result2: Either[String, Int] = divide(10, 0) // Left("Division by zero is not allowed.")
+
+// Pattern matching to handle the Either
+val output1: String = result1 match {
+  case Right(value) => s"Result: $value"
+  case Left(errorMessage) => s"Error: $errorMessage"
+}
+
+val output2: String = result2 match {
+  case Right(value) => s"Result: $value"
+  case Left(errorMessage) => s"Error: $errorMessage"
+}
+
+println(output1) // Output: "Result: 5"
+println(output2) // Output: "Error: Division by zero is not allowed."
+```
+
+I understand that the three error handling methods might be confusing regarding when to use each one. To clarify, here are the best practices for utilizing each of them in different situations:
+- Use `Option` for cases where a function may return a value or None.
+- Use `Try` for handling potentially throwing functions and capturing exceptions.
+- Use `Either` for handling different types of errors and providing meaningful error messages.
+
+
+I believe this post provides a brief overview of the Scala language. In the next post, I will delve into more advanced Scala language concepts. Stay tuned!
+
