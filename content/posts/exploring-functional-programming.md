@@ -11,6 +11,7 @@ toc_label: 'Table of Contents'
 author:
   'Daniel G.'
 date: 2018-07-08
+comments: true
 ---
 
 ## Introduction
