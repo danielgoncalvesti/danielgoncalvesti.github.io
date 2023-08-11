@@ -1,5 +1,5 @@
 ---
-title: 'Enhancing Data Validation with Either in Scala: A Journey Through Reliable Code'
+title: 'Enhancing Data Validation with Either in Scala'
 last_modified_at: 2018-03-20T16:01:04-04:00
 categories:
   - blog
