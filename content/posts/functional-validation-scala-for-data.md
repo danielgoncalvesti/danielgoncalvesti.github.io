@@ -15,7 +15,6 @@ author:
   'Daniel G.'
 date: 2023-08-11
 ---
-# Enhancing Data Validation with Either in Scala: A Journey Through Reliable Code
 
 As a Scala developer, you'll inevitably encounter the necessity for validation while handling domain models. The Scala ecosystem presents an extensive array of tools tailored for this exact purpose. In this blog post, we'll delve into several prevalent approaches, demonstrating their application to a domain model.
   
