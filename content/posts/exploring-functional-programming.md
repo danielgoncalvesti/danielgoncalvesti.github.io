@@ -12,6 +12,7 @@ author:
   'Daniel G.'
 date: 2018-07-08
 comments: true
+layout: default
 ---
 
 ## Introduction
